@@ -1,0 +1,47 @@
+options:
+
+
+
+# KEYS
+  KeyType: TRIPWIRE HOOK
+  KeyName: "&2&lKlucz Pospolity"
+  KeyLore: "&7Kliknij PPM na pospolitą skrzynie na /warp skrzynie"
+  
+  
+ on rightclick on chest:
+ if block under event-block is iron block:
+ 
+    cencel event-block
+	if player is holding {@KeyType} named {@KeyName} with lore {@KeyLore}:
+	
+	
+	
+	  set {_random} to a random integer from 1 to 100
+	  
+	  if {_random} is between 1 and 50:
+	    set {_item} to coal
+	  if {_random} is between 51 and 70:
+	    set {_item} to coal block
+	  if {_random} is between 71 and 80:
+	    set {_item} to bone meal
+	  if {_random} is between 81 and 89:
+	    set {_item} to bone block
+	  if {_random} is between 90 and 96:
+	    set {_item} to iron block
+	  if {_random} is between 97 and 100:
+	    set {_item} diamond
+		
+	  give player 1 of {_item}
+	  send "Dostałeś %{_item}%" to player
+	  play sound "BLOCK_CHEST_OPEN" at volume 100 and pitc 0.5 for player
+	  remove 1 of {@KeyType} named {@KeyName} with lore {@KeyLore} from player's inventory
+	  
+	
+	else 
+	  send "&c Potrzebujesz klucza!" to player
+	  
+	  
+command /key 1:
+  permission: op
+  trigger:
+    give player 1

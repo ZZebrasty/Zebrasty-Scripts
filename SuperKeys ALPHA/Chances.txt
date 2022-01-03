@@ -1,0 +1,43 @@
+Pospolity:
+
+1-50 Coal
+51-70 Coal Block
+71-80 Bone Meal
+81-89 Bone Block
+90-94 Iron Block
+95-100 Diamond
+
+Rzadki:
+
+1-30 Coal
+31-50 Coal Block
+51-70 Bone Meal
+71-80 Iron
+81-94 Iron Block
+95-100 Diamond
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Default:
+
+1-10 Coal
+11-20 Coal Block
+21-30 Bone Meal
+31-40 Bone Block
+41-50 Iron
+51-60 Gold
+61-70 Emerald
+71-80 Diamond
+81-90 Iron Block
+91-100 Gold Block
